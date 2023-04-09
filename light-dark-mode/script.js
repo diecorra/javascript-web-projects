@@ -16,17 +16,16 @@ function changeImageMode(color) {
 }
 
 function toggleDarkLightMode(mode) {
-  nav.style.backgroundColor = DARK_THEME
-    ? "rgb(0 0 0 / 50%)"
-    : "rgb(255 255 255 / 50%)";
-  textBox.style.backgroundColor = DARK_THEME
-    ? "rgb(255 255 255 / 50%)"
-    : "rgb(0 0 0 / 50%)";
-  toggleIcon.children[0].textContent = DARK_THEME ? "Dark Mode" : "Light Mode";
-  DARK_THEME
+  nav.style.backgroundColor =
+    mode === DARK_THEME ? "rgb(0 0 0 / 50%)" : "rgb(255 255 255 / 50%)";
+  textBox.style.backgroundColor =
+    mode === DARK_THEME ? "rgb(255 255 255 / 50%)" : "rgb(0 0 0 / 50%)";
+  toggleIcon.children[0].textContent =
+    mode === DARK_THEME ? "Dark Mode" : "Light Mode";
+  mode === DARK_THEME
     ? toggleIcon.children[1].classList.replace("fa-sun", "fa-moon")
     : toggleIcon.children[1].classList.replace("fa-moon", "fa-sun");
-  DARK_THEME ? changeImageMode("dark") : changeImageMode("light");
+  mode === DARK_THEME ? changeImageMode("dark") : changeImageMode("light");
 }
 
 // Switch Theme Dinamically
