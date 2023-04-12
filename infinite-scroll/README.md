@@ -3,5 +3,5 @@
 In this application i createad an image scrolling, that takes random images from [Unsplash API](https://unsplash.com/developers).
 Images are loaded while scrolling the page for better performance.
 
-Link: https://js-infinite-scroll.netlify.app/
+Link: https://js-infinite-scroll.netlify.app<br><br>
 ![WebSite screen](/infinite-scroll/infinite-scroll-screen.gif)
