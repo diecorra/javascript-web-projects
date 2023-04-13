@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -8,6 +10,7 @@ body {
   overflow-y: hidden;
   display: flex;
   align-items: center;
+  font-family: Nunito, sans-serif;
 }
 
 /* Video Background */
@@ -79,6 +82,7 @@ input {
   border-radius: 20px;
   background: #fff;
   outline: none;
+  font-family: Nunito, sans-serif;
 }
 
 /* Button */
@@ -95,12 +99,17 @@ button {
   outline: none;
 }
 
+button:hover {
+  filter: brightness(110%);
+}
+
 /* Countdown */
 ul {
   margin-left: -45px;
 }
 
 li {
+  display: inline-block;
   font-size: 30px;
   list-style-type: none;
   padding: 10px;
@@ -117,6 +126,33 @@ li span {
 .complete {
   position: relative;
   top: 60px;
+}
+
+.complete-title {
+  animation: complete 4s infinite;
+}
+
+@keyframes complete {
+  0% {
+    color: rgb(204, 9, 9);
+  }
+
+  25% {
+    color: rgb(218, 221, 16);
+  }
+
+  50% {
+    color: rgb(26, 192, 48);
+    transform: scale(1.5);
+  }
+
+  75% {
+    color: rgb(28, 73, 196);
+  }
+
+  100% {
+    color: rgb(167, 31, 201);
+  }
 }
 
 /* Media Query: Large Smartphone (Vertical) */
