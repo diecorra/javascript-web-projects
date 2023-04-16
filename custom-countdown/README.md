@@ -1,5 +1,6 @@
-# custom-contdown
+# custom-countdown
 
-Application creates to learn how to create a custom countdown timer, also caching the countdown information with LocalStorage.
+In this application i created a custom countdown timer, also caching the countdown information with LocalStorage.
 
-Link: <br>
+Link: https://js-custom-countdown.netlify.app<br><br>
+![WebSite screen](customcountdown-screen.png)
