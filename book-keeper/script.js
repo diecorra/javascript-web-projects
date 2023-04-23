@@ -5,8 +5,20 @@ const bookmarkForm = document.getElementById('bookmark-form');
 const websiteNameEl = document.getElementById('website-name');
 const websiteUrlEl = document.getElementById('website-url');
 const bookmarkContainer = document.getElementById('bookmarks-container');
+const tooltipHandle = document.querySelector('.tooltip-info');
 
 let bookmarks = [];
+
+function showTooltip() {
+  const displayTooltip = getComputedStyle(document.documentElement)
+    .getPropertyValue('--tooltip-display')
+    .trim();
+  if (displayTooltip === 'none') {
+    document.documentElement.style.setProperty('--tooltip-display', 'block');
+  } else {
+    document.documentElement.style.setProperty('--tooltip-display', 'none');
+  }
+}
 
 function showModal() {
   modal.classList.add('show-modal');
@@ -17,9 +29,10 @@ modalShow.addEventListener('click', showModal);
 modalClose.addEventListener('click', () =>
   modal.classList.remove('show-modal')
 );
-window.addEventListener('click', (e) =>
-  e.target === modal ? modal.classList.remove('show-modal') : false
-);
+window.addEventListener('click', (e) => {
+  e.target === modal ? modal.classList.remove('show-modal') : false;
+  console.log(e);
+});
 
 function validate(nameValue, urlValue) {
   const expression =
@@ -126,5 +139,6 @@ function storeBookmark(e) {
 }
 
 bookmarkForm.addEventListener('submit', storeBookmark);
+tooltipHandle.addEventListener('click', showTooltip);
 
 fetchBookmarks();

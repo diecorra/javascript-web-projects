@@ -3,6 +3,7 @@
 :root {
   --primary-color: #2049a7;
   --border-radius: 25px;
+  --tooltip-display: none;
 }
 
 html {
@@ -18,21 +19,40 @@ body {
   font-family: 'Dosis', sans-serif;
 }
 
-h1 {
+.title {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#show-modal {
   color: white;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: var(--border-radius);
   cursor: pointer;
   text-transform: uppercase;
-  width: 275px;
+  width: 100px;
   margin: 20px auto 10px;
   user-select: none;
   text-align: center;
+  font-size: 20px;
 }
 
-h1:hover {
+#show-modal:hover {
   background-color: rgba(0, 0, 0, 0.9);
+}
+
+h1 {
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  font-size: 40px;
 }
 
 .container {
@@ -72,6 +92,39 @@ a:active {
   text-decoration: underline;
 }
 
+.border-icon {
+  border: 2px solid black;
+  border-radius: 9999px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.tooltip-info::before {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  content: 'Application for saving and managing bookmarks.';
+  position: absolute;
+  right: 23px;
+  top: 20px;
+  max-width: 60vw;
+  width: max-content;
+  padding: 10px;
+  cursor: auto;
+  display: var(--tooltip-display);
+}
+
+.tooltip-info {
+  position: relative;
+  right: 10px;
+  top: 30px;
+}
+
 .fa-times {
   float: right;
   cursor: pointer;
@@ -105,12 +158,6 @@ a:active {
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-.show-modal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .modal {
