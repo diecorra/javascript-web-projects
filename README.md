@@ -11,3 +11,4 @@ Javascript projects created to learn the basics of javascript, created by me, in
 7. Navigation Nation: https://js-navigation-nation.netlify.app
 8. Music Player: https://javascript-musicplayer.netlify.app
 9. Custom Countdown: https://js-custom-countdown.netlify.app
+10. Video Player: https://javascript-videoplayer.netlify.app
