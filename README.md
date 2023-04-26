@@ -12,3 +12,4 @@ Javascript projects created to learn the basics of javascript, created by me, in
 8. Music Player: https://javascript-musicplayer.netlify.app
 9. Custom Countdown: https://js-custom-countdown.netlify.app
 10. Video Player: https://javascript-videoplayer.netlify.app
+11. Form Validator: https://js-formvalidator.netlify.app
