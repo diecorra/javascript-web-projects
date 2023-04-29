@@ -50,6 +50,7 @@ ul {
 
 /* Columns */
 .drag-column {
+  flex: 1;
   margin: 0 10px;
   position: relative;
   background-color: rgba(0, 0, 0, 0.4);
@@ -62,6 +63,7 @@ ul {
 .backlog-column .solid:hover,
 .backlog-column .over {
   background-color: var(--column-1);
+  border-radius: 10px;
 }
 
 .progress-column .header,
@@ -69,6 +71,7 @@ ul {
 .progress-column .solid:hover,
 .progress-column .over {
   background-color: var(--column-2);
+  border-radius: 10px;
 }
 
 .complete-column .header,
@@ -76,6 +79,7 @@ ul {
 .complete-column .solid:hover,
 .complete-column .over {
   background-color: var(--column-3);
+  border-radius: 10px;
 }
 
 .on-hold-column .header,
@@ -83,6 +87,7 @@ ul {
 .on-hold-column .solid:hover,
 .on-hold-column .over {
   background-color: var(--column-4);
+  border-radius: 10px;
 }
 
 /* Custom Scrollbar */
