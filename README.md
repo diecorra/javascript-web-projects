@@ -13,3 +13,5 @@ Javascript projects created to learn the basics of javascript, created by me, in
 9. Custom Countdown: https://js-custom-countdown.netlify.app
 10. Video Player: https://javascript-videoplayer.netlify.app
 11. Form Validator: https://js-formvalidator.netlify.app
+12. Nasa Articles: https://nasa-articles.netlify.app
+13. Kanban Board: https://js-kanbanboard.netlify.app
