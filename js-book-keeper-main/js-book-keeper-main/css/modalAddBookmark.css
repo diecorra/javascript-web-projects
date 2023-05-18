@@ -1,0 +1,141 @@
+#show-modal {
+  color: white;
+  background-color: transparent;
+  border: 0 solid transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Dosis', sans-serif;
+  font-size: 12px;
+}
+
+.modal-container {
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.show-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: var(--primary-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  max-width: 95%;
+  width: 500px;
+  animation: modalopen 1s;
+  border-radius: 10px;
+}
+
+.modal-content {
+  padding: 20px;
+  border-radius: 10px;
+  background: whitesmoke;
+}
+
+.close-icon {
+  float: right;
+  color: #ffffff;
+  font-size: 24px;
+  position: relative;
+  top: 13px;
+  right: 13px;
+  cursor: pointer;
+}
+
+.modal-header {
+  background: var(--primary-color);
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.save-error-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#save-btn {
+  cursor: pointer;
+  color: white;
+  background: var(--primary-color);
+  height: 30px;
+  width: 100px;
+  border: none;
+  border-radius: var(--border-radius);
+  margin-top: 10px;
+}
+
+#save-btn:hover {
+  filter: brightness(110%);
+}
+
+#save-btn:focus {
+  outline: none;
+}
+
+.error-container-class {
+  color: white;
+  background-color: red;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 30px;
+  width: 70%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-bookmarks {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h3 {
+  margin: 0;
+}
+
+.form-group {
+  height: 55px;
+}
+
+.form-input {
+  width: 97%;
+  padding: 5px;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  display: block;
+  outline: none;
+}
+
+.form-label {
+  color: var(--primary-color);
+  display: block;
+}
+
+/* Media Query: Large Smartphone */
+@media screen and (max-width: 600px) {
+  .no-bookmarks {
+    font-size: 20px;
+  }
+}
