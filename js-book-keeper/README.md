@@ -6,4 +6,4 @@ Added localStorage feature, so the user can visit website anytime and find bookm
 Link: https://js-book-keeper.netlify.app
 
 
-![image](https://github.com/diecorra/js-book-keeper/assets/32736570/7cc0713f-c18c-4ac7-9872-8d25fa0cffe8)
+![image](https://github.com/diecorra/javascript-web-projects/assets/32736570/1e557b09-dcc3-469c-a48e-6ba0205dcc72))
